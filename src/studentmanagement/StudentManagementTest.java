@@ -74,6 +74,50 @@ public class StudentManagementTest {
         System.out.println("\nTotal student count: "
                 + students.getSize());
 
+
+        // 8. Test duplicate student ID
+        System.out.println("\n7. TEST DUPLICATE STUDENT ID");
+
+        boolean duplicateResult = students.addStudent(
+                new Student(
+                        "22UG3-0399",
+                        "Duplicate Student",
+                        "Information Technology",
+                        70
+                )
+        );
+
+        System.out.println("Duplicate accepted: " + duplicateResult);
+
+        // 9. Test invalid marks during update
+        System.out.println("\n8. TEST INVALID MARKS");
+
+        boolean invalidMarksResult = students.updateStudent(
+                "22UG3-0399",
+                "A.A.P. Kumarasiri",
+                "Information Technology",
+                150
+        );
+
+        System.out.println("Invalid update accepted: " + invalidMarksResult);
+
+        // 10. Test searching for a missing student
+        System.out.println("\n9. TEST MISSING STUDENT");
+
+        Student missing = students.searchStudent("22UG3-9999");
+
+        if (missing == null) {
+            System.out.println("Correct: Student not found.");
+        }
+
+        // 11. Test deleting a missing student
+        System.out.println("\n10. TEST DELETING MISSING STUDENT");
+
+        students.deleteStudent("22UG3-9999");
+
+        // 12. Check final student count
+        System.out.println("\nFinal student count: " + students.getSize());
+
         System.out.println("\n===== TEST COMPLETED =====");
     }
 }

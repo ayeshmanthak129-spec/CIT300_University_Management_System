@@ -74,7 +74,7 @@ public class Student {
 
     // Set marks
     public void setMarks(double marks) {
-        if (marks < 0 || marks > 100) {
+        if (!Double.isFinite(marks) || marks < 0 || marks > 100) {
             throw new IllegalArgumentException(
                     "Marks must be between 0 and 100."
             );

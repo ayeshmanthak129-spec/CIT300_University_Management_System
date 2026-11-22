@@ -230,18 +230,76 @@ java -cp out graph.CampusGraphTest
 
 The integrated application was also tested through its main menu, including student management, searching, action history, service requests and campus graph operations.
 
-## 8. Group Members and Responsibilities
 
-This project was developed collaboratively by four group members.
+## 8. Group Members, Responsibilities and Individual Contributions
 
-| Member | Student ID | Name | Responsibility |
-|---|---|---|---|
-| Member 1 | 22UG3-0399 | A.A.P. Kumarasiri | Linked List and Student Record Management; project integration |
-| Member 2 | 22UG3-0436 | M R M FAHAD | Stack, Queue and Service Request Management |
-| Member 3 | 22UG3-0811 | G.W.W.M.R.P.U.W.C.A.K Polgaspitiya | Binary Search Tree and Hashing |
-| Member 4 | 22UG3-0141 | M.A.M AMMAR | Graph, Campus Locations, BFS and DFS |
+The project was developed collaboratively by four group members. Each member was assigned a specific data structure or system component and was responsible for implementing and testing that component. The completed modules were integrated into the main application.
 
-Each member was responsible for implementing and testing their assigned module. The modules were integrated into the main application through GitHub branches and pull requests.
+### Member 1 – Student Management and Linked List
+
+- **Student ID:** 22UG3-0399
+- **Name:** A.A.P. Kumarasiri
+- **Assigned Responsibility:** Linked List and Student Record Management
+- **Individual Contributions:**
+    - Implemented the `Student` class to represent student records.
+    - Implemented `StudentNode` and `StudentLinkedList`.
+    - Developed student insertion, updating, deletion, searching and display operations.
+    - Implemented duplicate student ID prevention and marks validation.
+    - Developed and tested the student management functionality.
+    - Integrated the individual modules into the main menu-driven application through `Main.java`.
+    - Coordinated project integration and GitHub collaboration.
+
+### Member 2 – Stack, Queue and Service Requests
+
+- **Student ID:** 22UG3-0436
+- **Name:** M R M FAHAD
+- **Assigned Responsibility:** Stack, Queue and Service Request Management
+- **Individual Contributions:**
+    - Implemented the `Action` and `ActionNode` classes.
+    - Developed `ActionStack` to maintain recent system action history.
+    - Implemented stack operations, including push, pop, peek, display and size.
+    - Implemented the `ServiceRequest` and `RequestNode` classes.
+    - Developed `ServiceRequestQueue` to manage student service requests using FIFO order.
+    - Implemented request addition, processing, peeking, displaying and size operations.
+    - Developed and tested the stack and queue functionality.
+
+### Member 3 – Binary Search Tree and Hashing
+
+- **Student ID:** 22UG3-0811
+- **Name:** G.W.W.M.R.P.U.W.C.A.K Polgaspitiya
+- **Assigned Responsibility:** Binary Search Tree and Hashing
+- **Individual Contributions:**
+    - Implemented `StudentTreeNode` and `StudentBST`.
+    - Developed Binary Search Tree insertion, searching, deletion and in-order traversal operations.
+    - Implemented `HashNode` and `StudentHashTable`.
+    - Developed student ID hashing and collision handling using separate chaining.
+    - Implemented hash table insertion, searching and deletion operations.
+    - Developed and tested the tree and hashing functionality.
+
+### Member 4 – Graph and Campus Route Management
+
+- **Student ID:** 22UG3-0141
+- **Name:** M.A.M AMMAR
+- **Assigned Responsibility:** Graph, Campus Locations, BFS and DFS
+- **Individual Contributions:**
+    - Implemented the `CampusLocation` class.
+    - Developed `CampusGraph` using an adjacency list representation.
+    - Implemented adding and removing campus locations.
+    - Implemented connecting and disconnecting campus locations.
+    - Developed operations to display the campus network and connected neighbours.
+    - Implemented Breadth-First Search (BFS) and Depth-First Search (DFS) traversal.
+    - Developed and tested the campus graph functionality.
+
+### Shared Group Contributions
+
+All group members contributed to completing the overall project through their assigned responsibilities and collaborative activities, including:
+
+- Integrating the individual modules into the complete application.
+- Testing and debugging assigned components and integrated functionality.
+- Collaborating through GitHub branches, commits and Pull Requests.
+- Reviewing and merging completed contributions.
+- Supporting project documentation and final demonstration preparation.
+
 
 ## 9. Version Control and Collaboration
 
